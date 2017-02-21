@@ -1,0 +1,25 @@
+﻿@model DAKI.Models.UserProfile
+@{
+    ViewBag.Title = "Profile";
+}
+<div class="profileMenu">
+    <ul>
+        <li class="active">@Html.ActionLink("Profile", "Profile", "Account")</li>
+        <li>@Html.ActionLink("Badges", "Badges", "Account")</li>
+        <li>@Html.ActionLink("Progress", "Progress", "Account")</li>
+        <li>@Html.ActionLink("Manage", "Manage", "Account")</li>
+    </ul>
+</div>
+<div class="profile">
+    <hgroup class="title">
+        <h1><strong>@User.Identity.Name</strong></h1>
+    </hgroup>
+    <p>Fullname: @Html.DisplayFor(model => model.Name) @Html.DisplayFor(model => model.Surname)</p>
+    <p>Email: @Html.DisplayFor(model => model.Email)</p>
+    <p>Address: @Html.DisplayFor(model => model.Address)</p>
+    <p>Department</p>
+    <p>Job</p>
+    <br />
+    <p><strong>Total points:</strong> @Html.DisplayFor(model => model.Points)</p>
+    <p><strong>Current points:</strong> @Html.DisplayFor(model => model.CurrentPoints)</p>
+</div>

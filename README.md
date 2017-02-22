@@ -2,4 +2,4 @@ DAKI is a team project for a web application to administrate, monitor and reward
 The app uses gamification technique to increase productivity inside the company.
 The users can exchange points for benefits and items found in the virtual shop.
 
-Technologies used: ASP.NET, C#, SQL, HTML, CSS, JS.
+Technologies used: ASP.NET, MVC, SQL, HTML, CSS, JS.
